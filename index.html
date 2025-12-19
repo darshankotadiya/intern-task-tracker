@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Task Tracker</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 40px; }
+        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 400px; }
+        h2 { color: #1a73e8; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; margin-top: 0; }
+        .intern-info { background: #f8f9fa; padding: 15px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #1a73e8; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 6px; outline: none; }
+        input:focus { border-color: #1a73e8; }
+        button { padding: 10px 20px; background: #1a73e8; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #1557b0; }
+        .task-item { list-style: none; padding: 12px; margin: 8px 0; background: #fff; border-radius: 8px; border: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .pending { border-left: 4px solid #fbbc04; background: #fffcf5; }
+        .done { border-left: 4px solid #34a853; background: #f6fdf9; }
+        .tag { font-size: 11px; background: #e8f0fe; color: #1a73e8; padding: 3px 8px; border-radius: 12px; margin-right: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🚀 Intern Tracker</h2>
+        <div id="intern-details" class="intern-info"></div>
+        
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Write New Task...">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <h3>My Tasks</h3>
+        <ul id="task-list" style="padding: 0;"></ul>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
